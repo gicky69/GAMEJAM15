@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 200.0
+var SPEED = 200.0
 const JUMP_VELOCITY = -900.0
 @onready var sprite_2d = $Sprite2D
 
@@ -23,13 +23,20 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
+	if Input.is_action_pressed("sprint"):
+		SPEED = 400.0
+	else:
+		SPEED = 200.0
+		
+	print(SPEED)
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("left", "right")
+	
 	if direction:
 		velocity.x = direction * SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, 25)
+		velocity.x = move_toward(velocity.x, 0, 15)
 		
 
 	move_and_slide()
