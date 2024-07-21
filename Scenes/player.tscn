@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://3vkpeajruw1f"]
+[gd_scene load_steps=26 format=3 uid="uid://cbvxoqa5qoc6v"]
 
 [ext_resource type="Script" path="res://Scenes/player.gd" id="1_75652"]
 [ext_resource type="Texture2D" uid="uid://cl2n5sieth3n" path="res://icon.svg" id="1_x53w7"]
@@ -101,7 +101,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 7.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -159,11 +159,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"running",
-"speed": 7.0
+"speed": 2.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gduwq"]
-size = Vector2(17, 20)
+size = Vector2(31.5, 32)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_75652")
@@ -171,11 +171,11 @@ script = ExtResource("1_75652")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-3.8147e-06, 3.8147e-06)
-scale = Vector2(0.570315, 0.570315)
 sprite_frames = SubResource("SpriteFrames_5j8yc")
-animation = &"jumping"
+animation = &"running"
 autoplay = "default"
+frame_progress = 0.818936
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0)
+position = Vector2(0.25, 0)
 shape = SubResource("RectangleShape2D_gduwq")
