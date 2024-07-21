@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cthcumnu0cf2t"]
+[gd_scene load_steps=7 format=3 uid="uid://cthcumnu0cf2t"]
 
+[ext_resource type="Texture2D" uid="uid://b00r7x8dw4s4g" path="res://floor2.bmp" id="1_swwqd"]
 [ext_resource type="Texture2D" uid="uid://rppyxk4mblmy" path="res://floor.bmp" id="2_jvfpl"]
 [ext_resource type="PackedScene" uid="uid://cbvxoqa5qoc6v" path="res://Scenes/player.tscn" id="3_nosx0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rh2vm"]
-texture = ExtResource("2_jvfpl")
+texture = ExtResource("1_swwqd")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -38,7 +39,7 @@ layer_0/tile_data = PackedInt32Array(786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 7
 position = Vector2(96, 414)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(4, -108)
+position = Vector2(3.24128, -34.1535)
 limit_left = -200
 limit_smoothed = true
 position_smoothing_enabled = true

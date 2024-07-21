@@ -26,7 +26,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("sprint"):
 		SPEED = 300.0
 	else:
-		SPEED = 150.0
+		SPEED = 200.0
 	
 	
 	# Get the input direction and handle the movement/deceleration.
@@ -41,6 +41,7 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
-	var isLeft = velocity.x < 0
-	sprite_2d.flip_h = isLeft
+	if velocity.x != 0:
+		var isLeft = velocity.x < 0
+		sprite_2d.flip_h = isLeft
 		
