@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cthcumnu0cf2t"]
+[gd_scene load_steps=8 format=3 uid="uid://cthcumnu0cf2t"]
 
 [ext_resource type="Texture2D" uid="uid://b00r7x8dw4s4g" path="res://floor2.bmp" id="1_swwqd"]
 [ext_resource type="Texture2D" uid="uid://rppyxk4mblmy" path="res://floor.bmp" id="2_jvfpl"]
 [ext_resource type="PackedScene" uid="uid://cbvxoqa5qoc6v" path="res://Scenes/player.tscn" id="3_nosx0"]
+[ext_resource type="PackedScene" uid="uid://4y33p1fdc8w" path="res://block.tscn" id="4_eygm4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rh2vm"]
 texture = ExtResource("1_swwqd")
@@ -44,3 +45,6 @@ limit_left = -200
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
+
+[node name="Block" parent="." instance=ExtResource("4_eygm4")]
+position = Vector2(200, 384)
