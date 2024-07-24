@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://cthcumnu0cf2t"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_fypbq"]
-[ext_resource type="Texture2D" uid="uid://b00r7x8dw4s4g" path="res://Assets/floor2.bmp" id="1_swwqd"]
-[ext_resource type="Texture2D" uid="uid://rppyxk4mblmy" path="res://Assets/floor.bmp" id="2_jvfpl"]
+[ext_resource type="Texture2D" uid="uid://b00r7x8dw4s4g" path="res://floor2.bmp" id="1_swwqd"]
+[ext_resource type="Texture2D" uid="uid://rppyxk4mblmy" path="res://floor.bmp" id="2_jvfpl"]
 [ext_resource type="PackedScene" uid="uid://cbvxoqa5qoc6v" path="res://Scenes/player.tscn" id="3_nosx0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rh2vm"]

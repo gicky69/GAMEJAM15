@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ytntstc0b06e"
-path="res://.godot/imported/grass-block.png-1b83d811ad1b568dc6f02ff4c192c229.ctex"
+uid="uid://c0fmlywonjosq"
+path="res://.godot/imported/neco arc.png-746a2435d2eb1051b1b12ded021fbb97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://grass-block.png"
-dest_files=["res://.godot/imported/grass-block.png-1b83d811ad1b568dc6f02ff4c192c229.ctex"]
+source_file="res://Assets/neco arc.png"
+dest_files=["res://.godot/imported/neco arc.png-746a2435d2eb1051b1b12ded021fbb97.ctex"]
 
 [params]
 

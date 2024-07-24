@@ -14,14 +14,6 @@ func _physics_process(delta):
 	
 	if (velocity.x > 1 or velocity.y < -1):
 		sprite_2d.animation = "running"
-		
-	if Input.is_action_just_pressed("light"):
-		if light:
-			sprite_2d.animation = "dark-idle"
-			light = false
-		else:
-			sprite_2d.animation = "default"
-			light = true
 	
 	# Add the gravity.
 	if not is_on_floor():
@@ -55,4 +47,6 @@ func _physics_process(delta):
 
 	# Determine sprite orientation based on velocity
 	var isLeft = velocity.x < 0
+	if isLeft:
+		sprite_2d.animation = "running"
 	sprite_2d.flip_h = isLeft

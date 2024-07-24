@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/player.gd" id="1_75652"]
 [ext_resource type="Texture2D" uid="uid://bw8flxr4wkgl3" path="res://Assets/MC_girl-Sheet.png" id="2_w6am3"]
-[ext_resource type="Texture2D" uid="uid://uudbqk3wmxx6" path="res://grass block.png" id="3_hhv8y"]
+[ext_resource type="Texture2D" uid="uid://uudbqk3wmxx6" path="res://Assets/grass block.png" id="3_hhv8y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mw4i3"]
 atlas = ExtResource("3_hhv8y")
