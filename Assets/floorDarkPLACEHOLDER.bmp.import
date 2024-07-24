@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b00r7x8dw4s4g"
-path="res://.godot/imported/floor2.bmp-9e57b1a493ff0cdbb938de61d6bc2c60.ctex"
+uid="uid://rppyxk4mblmy"
+path="res://.godot/imported/floorDarkPLACEHOLDER.bmp-e6a0a8e7b0f9a64dea526d32c2a3e691.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/floor2.bmp"
-dest_files=["res://.godot/imported/floor2.bmp-9e57b1a493ff0cdbb938de61d6bc2c60.ctex"]
+source_file="res://Assets/floorDarkPLACEHOLDER.bmp"
+dest_files=["res://.godot/imported/floorDarkPLACEHOLDER.bmp-e6a0a8e7b0f9a64dea526d32c2a3e691.ctex"]
 
 [params]
 

@@ -63,4 +63,4 @@ light={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-environment/defaults/default_clear_color=Color(0.0592145, 0.00631101, 0.0568122, 1)
+environment/defaults/default_clear_color=Color(0.0532852, 0.0119646, 0.039797, 1)

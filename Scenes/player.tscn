@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cbvxoqa5qoc6v"]
+[gd_scene load_steps=21 format=3 uid="uid://cbvxoqa5qoc6v"]
 
 [ext_resource type="Script" path="res://Scenes/player.gd" id="1_75652"]
 [ext_resource type="Texture2D" uid="uid://bw8flxr4wkgl3" path="res://Assets/MC_girl-Sheet.png" id="2_w6am3"]
@@ -44,6 +44,14 @@ region = Rect2(0, 0, 32, 32)
 atlas = ExtResource("2_w6am3")
 region = Rect2(32, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqrbt"]
+atlas = ExtResource("2_w6am3")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ufxph"]
+atlas = ExtResource("2_w6am3")
+region = Rect2(416, 0, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_cbd3d"]
 atlas = ExtResource("2_w6am3")
 region = Rect2(64, 0, 32, 32)
@@ -85,7 +93,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"dark-idle",
-"speed": 8.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -95,13 +103,19 @@ animations = [{
 "texture": SubResource("AtlasTexture_jdoos")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idleLight",
 "speed": 3.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqrbt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ufxph")
+}],
 "loop": true,
 "name": &"jumping",
-"speed": 7.0
+"speed": 0.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -133,10 +147,8 @@ texture_filter = 1
 position = Vector2(-2.38419e-07, 2.38419e-07)
 scale = Vector2(0.75244, 0.75244)
 sprite_frames = SubResource("SpriteFrames_5j8yc")
-animation = &"dark-idle"
-autoplay = "default"
-frame = 6
-frame_progress = 0.312952
+animation = &"jumping"
+autoplay = "idleLight"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.23152, 2.72238)
