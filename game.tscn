@@ -40,11 +40,13 @@ layer_0/tile_data = PackedInt32Array(786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 7
 position = Vector2(96, 414)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(3.24128, -34.1535)
+position = Vector2(0.463039, 3.46485)
+zoom = Vector2(1.5, 1.5)
 limit_left = -200
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
+rotation_smoothing_enabled = true
 
 [node name="Block" parent="." instance=ExtResource("4_eygm4")]
 position = Vector2(200, 384)
